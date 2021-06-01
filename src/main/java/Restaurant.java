@@ -66,4 +66,9 @@ public class Restaurant {
         return name;
     }
 
+
+    public int calculateOrderVlaue(List<Item> orderItem) {
+        int sum = 0;
+        return sum;
+    }
 }
