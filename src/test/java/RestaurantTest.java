@@ -84,6 +84,7 @@ class RestaurantTest {
     public void calculate_total_price_of_selected_items(){
         List<Item> orderItem  = new ArrayList<Item>();
         orderItem.add(restaurant.getMenu().get(0));
-        assertEquals(119,restaurant.calculateOrderVlaue(orderItem));
+        orderItem.add(restaurant.getMenu().get(1));
+        assertEquals(388,restaurant.calculateOrderVlaue(orderItem));
     }
 }

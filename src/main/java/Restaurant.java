@@ -69,6 +69,11 @@ public class Restaurant {
 
     public int calculateOrderVlaue(List<Item> orderItem) {
         int sum = 0;
+        //using for each loop to iterate over all the items present in OrderList
+        for(Item i: orderItem)
+        {
+            sum = sum + i.getPrice(); //here i represents an object of Item class and we are trying to access the price over each object by using the getter of Item.
+        }
         return sum;
     }
 }
